@@ -1,0 +1,96 @@
+.mainnavbardiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 4rem;
+  padding-block: 0rem;
+  background-color: black;
+}
+
+.logodiv img {
+  width: 80px;
+  height: 70px;
+}
+
+.uflex {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 6rem;
+}
+
+.uflex2 {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uflex2 li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.uflex li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.uflex li a:hover {
+  color: var(--mainyellowcolor);
+}
+
+.loginbtndiv button {
+  background-color: var(--mainyellowcolor);
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.menu {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.closebtn {
+  padding: 4rem;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  background: inherit;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  transition: 1s;
+  width: 300px;
+  background-color: black;
+}
+
+.sidebar-active {
+  right: 0;
+  transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  .uflex,
+  .loginbtndiv {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
