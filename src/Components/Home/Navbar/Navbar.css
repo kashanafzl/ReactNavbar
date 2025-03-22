@@ -77,6 +77,7 @@
   transition: 1s;
   width: 300px;
   background-color: black;
+  z-index: 5;
 }
 
 .sidebar-active {

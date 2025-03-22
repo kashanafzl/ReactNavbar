@@ -1,0 +1,85 @@
+.bgimgdiv {
+    position: relative;
+    background-image: url('../../../Assets/img/maincarbg.svg');
+    height: 89vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .bgimgdiv::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1;
+  }
+  .maincontent {
+    padding-top: 10rem;
+    position: relative;
+    z-index: 2; /* Add this */
+  }
+  
+  .maincontent h1 {
+    font-size: 5rem;
+    color: #ffffff; /* Make sure it's pure white */
+  }
+  
+  .maincontent p {
+    font-size: 1.8rem;
+    color: #ffffff; /* Change this to white too if you want visibility */
+    padding-block: 2rem;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+  }
+
+  .inputsearchdiv{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .searchicon{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 2rem;
+  }
+  
+.inputsearchdiv input{
+    padding: 1.5rem;
+    width: 600px;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    text-indent: 3rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .inputsearchdiv input{
+        width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .inputsearchdiv input{
+        width: 300px;
+    }
+
+    .maincontent p {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    .maincontent h1 {
+        padding-inline: 1rem;
+        font-size: 3rem;
+        color: #ffffff;
+    }
+  }

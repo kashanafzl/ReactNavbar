@@ -1,0 +1,79 @@
+
+.buycarmainflexdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 4rem;
+    padding-block: 5rem;
+    background-color: black;
+}
+
+
+.buycontent img{
+    width: 500px;
+}
+
+.buycontent button{
+    background-color: var(--mainyellowcolor);
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+
+}
+
+
+.buycontent h2{
+    color: #fff;
+    font-size: 3rem;
+    padding-block: 1rem;
+}
+
+.buycontent p{
+    color: #655F5F;
+    font-size: 1.6rem;
+    padding-block: 1rem;
+}
+
+
+.ratediv h1{
+    background-color: #2E2B2B;
+    padding: 12rem;
+    color: #fff;
+}
+.ratediv p{
+    background-color: #2E2B2B;
+    text-align: center;
+    color: #fff;
+    margin-top: -10rem;
+    font-size: 1.6rem;
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .ratediv p{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .buycontent img {
+        width: 390px;
+    }
+
+    .ratediv h1{
+        padding: 6rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .buycontent img {
+        width: 300px;
+    }
+}

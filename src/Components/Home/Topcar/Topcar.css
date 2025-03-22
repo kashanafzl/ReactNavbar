@@ -1,0 +1,32 @@
+
+
+.bgcardiv{
+    background-color: black;
+    padding-block: 5rem;
+}
+
+.bgcardiv h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-block: 2rem;
+    color: #fff;
+}
+
+.cardesignimg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cardesignimg img{
+    width: 200px;
+}
+
+
+@media screen  and (max-width:800px) {
+    
+.cardesignimg img{
+    width: 100px;
+}
+}

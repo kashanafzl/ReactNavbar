@@ -1,0 +1,43 @@
+.bgservices {
+  background: #1d1d1d;
+  padding-block: 4rem;
+}
+
+.bgservices h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 4rem;
+}
+
+.servicesmaindiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline: 4rem;
+  padding-block: 5rem;
+  gap: 4rem;
+}
+
+.servicescarddiv {
+  border: 1px solid var(--mainyellowcolor);
+  padding: 2rem;
+  background-color: black;
+  width: 370px;
+  height: 300px;
+  color: #fff;
+
+  text-align: center;
+}
+
+.servicescarddiv h4 {
+  font-size: 2rem;
+  padding-block: 2rem;
+}
+.servicescarddiv p {
+  font-size: 1.2rem;
+}
+
+.servicescarddiv img {
+  width: 100px;
+}
